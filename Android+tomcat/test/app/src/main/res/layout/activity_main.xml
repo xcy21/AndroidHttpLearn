@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_zhanghao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号："
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_zhanghao"/>
+
+    <TextView
+        android:id="@+id/tv_mima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码："
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_zhanghao"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/et_username"
+        android:layout_toRightOf="@+id/tv_mima"/>
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:onClick="onLogin"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:id="@+id/bt_regist"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="注册"
+        android:onClick="onReg"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="230dp"/>
+
+</RelativeLayout>
